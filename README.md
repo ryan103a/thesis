@@ -12,7 +12,7 @@ Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/s
 Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#chapter-biases). Includes information about the bais settings and what they do, as well as the limits for the EVK4-HD model. An example file for biases is 
 
 ```
-camera_settings.json
+# camera_settings.json
 {
  "ll_biases_state": {
   "bias": [
