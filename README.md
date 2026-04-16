@@ -3,9 +3,7 @@ Undergraduate thesis work. Generating a stereo event camera dataset for underwat
 
 ## Event camera output
 
-Prophesee metavision page [here](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). In a terminal run the command.
-
-`metavision_viewer`
+Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). Allows for streaming and recording of camera data.
 
 ## Event camera calibration files
 
