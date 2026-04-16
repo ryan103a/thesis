@@ -9,6 +9,8 @@ Prophesee metavision page [here](https://docs.prophesee.ai/stable/samples/module
 
 ## Event camera calibration files
 
+### Biases
+
 Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#chapter-biases).
 
 ## Event camera calibration 
