@@ -11,7 +11,8 @@ Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/s
 
 Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#chapter-biases). Includes information about the bais settings and what they do, as well as the limits for the EVK4-HD model. An example file for biases is 
 
-`{
+```
+{
  "ll_biases_state": {
   "bias": [
    {
@@ -20,11 +21,11 @@ Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#
    },
    {
     "name": "bias_diff_on",
-    "value": 50
+    "value": 0
    },
    {
     "name": "bias_diff_off",
-    "value": 50
+    "value": 0
    },
    {
     "name": "bias_fo",
@@ -32,7 +33,7 @@ Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#
    },
    {
     "name": "bias_hpf",
-    "value": 50
+    "value": 0
    },
    {
     "name": "bias_refr",
@@ -41,7 +42,7 @@ Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#
   ]
  }
 }
-`
+```
 
 
 ## Event camera calibration 
