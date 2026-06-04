@@ -3,7 +3,29 @@ Undergraduate thesis work. Generating a stereo event camera dataset for underwat
 
 ## Event camera output
 
-Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). Allows for streaming and recording of camera data.
+Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). Allows for streaming and recording of camera data. Run with: 
+`metavision_viewer`
+
+Open source [metavision driver](https://github.com/ros-event-camera/metavision_driver). Currently installed on personal computer at `metavisoin_driver_ws`, more in depth information on their github page. This is more of a quickstart for me. Make sure to source ROS2 and the driver folder itself with: 
+
+```
+cd metavision_driver_ws
+source install/setup.bash
+```
+
+The driver can then be run with:
+```
+ros2 launch metavision_driver driver_node.launch.py
+```
+
+The renderer can then be run with:
+```
+ros2 launch event_camera_renderer renderer.launch.py
+```
+
+Which can be viewed in RQT.
+
+
 
 ## Event camera calibration files
 
