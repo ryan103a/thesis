@@ -1,10 +1,14 @@
 # Thesis
 Undergraduate thesis work. Generating a stereo event camera dataset for underwater applications.
 
-## Event camera output
+## Useful commands
 
-Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). Allows for streaming and recording of camera data. Run with: 
-`metavision_viewer`
+| Command      | Description |
+| ----------- | ----------- |
+| `metavision_viewer` | Prophesee metavision [viewer](https://docs.prophesee.ai/stable/samples/modules/stream/viewer.html#chapter-samples-stream-viewer). Allows for streaming and recording of camera data. |
+| `metavision_platform_info` | Check all connected event cameras. |
+
+## Event camera stream with ROS2
 
 Open source [metavision driver](https://github.com/ros-event-camera/metavision_driver). Currently installed on personal computer at `metavisoin_driver_ws`, more in depth information on their github page. This is more of a quickstart for me. Make sure to source ROS2 and the driver folder itself with: 
 
@@ -24,6 +28,8 @@ ros2 launch event_camera_renderer renderer.launch.py
 ```
 
 Which can be viewed in RQT.
+
+## Metavision event camera recording
 
 
 
