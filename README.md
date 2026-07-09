@@ -80,3 +80,12 @@ Prophesee [focus adjustment](https://docs.prophesee.ai/stable/samples/modules/ca
 
 Core examples are stored at `/usr/local/share/metavision/sdk/core/cpp_samples`.
 The HAL examples are in `/usr/local/share/metavision/hal`.
+
+## BlueRov
+
+IPv4 Address: 192.168.2.1 
+
+SSH Connect to bluerov@ubuntu.local
+Password: bluerov
+
+BlueOS Website thing: blueos.local
