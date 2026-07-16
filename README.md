@@ -33,6 +33,17 @@ Which can be viewed in RQT.
 
 You can use `metavision_viewer` to record as well.
 
+## E2VID 
+
+Currently have converted sections of the code to work with a CPU instead of strictly GPU as is defualt.
+
+Load into the `e2vid` folder and run. Link to [E2VID](https://github.com/uzh-rpg/rpg_e2vid).
+```
+conda activate E2VID
+```
+
+Then use the repo to understand how to use the code.
+
 ## Event camera calibration files
 
 ### Biases
