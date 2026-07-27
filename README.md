@@ -87,6 +87,8 @@ Adjusting biases [link](https://docs.prophesee.ai/stable/hw/manuals/biases.html#
 
 Prophesee [focus adjustment](https://docs.prophesee.ai/stable/samples/modules/calibration/focus.html#chapter-samples-calibration-focus) and [calibration](https://docs.prophesee.ai/stable/samples/modules/calibration/calibration_pipeline.html#chapter-samples-calibration-calibration-pipeline) pages. Requires the Metavision SDK (don't currently have). 
 
+Checkerboard Pattern: https://markhedleyjones.com/projects/calibration-checkerboard-collection.
+
 ## Prophesee code examples 
 
 Core examples are stored at `/usr/local/share/metavision/sdk/core/cpp_samples`.
