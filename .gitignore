@@ -1,5 +1,4 @@
-metavision_examples/
-event_camera_recordings/
+metavision_core/*
+recordings/*
 jfrog_token.txt
 prophesee_venv/
-e2vid/
