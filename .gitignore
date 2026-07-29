@@ -2,5 +2,6 @@ metavision_core/*
 recordings/*
 reconstructions/*
 checkerboard_detections/*
+utils/bias_tuner_output/*
 jfrog_token.txt
 prophesee_venv/
