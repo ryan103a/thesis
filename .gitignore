@@ -1,4 +1,6 @@
 metavision_core/*
 recordings/*
+reconstructions/*
+checkerboard_detections/*
 jfrog_token.txt
 prophesee_venv/
