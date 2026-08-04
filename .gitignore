@@ -1,6 +1,7 @@
 metavision_core/*
 recordings/*
 reconstructions/*
+calibration/checkerboard_photos/*
 checkerboard_detections/*
 utils/bias_tuner_output/*
 jfrog_token.txt
