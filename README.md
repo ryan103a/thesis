@@ -92,6 +92,44 @@ ros2 run event_camera_tools bag_to_raw \
   -t /event_camera_secondary/events
 ```
 
+There are more steps to then convert the raw files for calibration.
+
+## Calibration 
+
+For this project I settled on using [E2CALIB](https://github.com/uzh-rpg/e2calib) to convert the event streams into grayscale images which could then be used to perform standard camera calibration using OpenCV.
+
+#### Conversion to h5 file format
+
+Thankfully the repo for E2CALIB includes a conversion file which converts a range of formats into .h5 which E2CALIB can then read. Make sure you are **not** using the virtual environment for E2CALIB/E2VID first.
+
+```
+python3 convert.py <raw>
+```
+
+#### E2CALIB Reconstruction
+
+On the page for the repo there is a description of all of the options for running the script. The command below is what has been used for this project.
+
+First it is important to activate the environment required to run the script using conda / venv. The following is then a command to reconstruct images from the .h5 file.
+
+```
+python offline_reconstruction.py \
+  --freq_hz 10 \
+  --upsample_rate 2 \
+  --h5file <data.h5> \
+  --output_folder <output_folder> \
+  --dataset_name <data_folder> \
+  --height 720
+  --width 1280
+  --use_gpu
+```
+
+Only use the ```--use_gpu``` option if you have a gpu.
+
+#### Checkerboard detection
+
+#### Intrinsics Calibration
+
 ## Metavision event camera recording
 
 You can use `metavision_viewer` to record as well.
