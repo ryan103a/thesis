@@ -119,8 +119,8 @@ python offline_reconstruction.py \
   --h5file <data.h5> \
   --output_folder <output_folder> \
   --dataset_name <data_folder> \
-  --height 720
-  --width 1280
+  --height 720 \
+  --width 1280 \
   --use_gpu
 ```
 
