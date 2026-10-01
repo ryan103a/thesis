@@ -18,10 +18,18 @@ Undergraduate thesis work. Generating a stereo event camera dataset for underwat
 
 ## BlueROV2
 
+### ROS Sourcing  
+
 ```
-source /opt/ros/humble/setup.bash \ 
-source ~/zimeng/pile_detection/all_ws/install/setup.bash \
+# On the BlueROV
+source /opt/ros/humble/setup.bash;
+source ~/zimeng/pile_detection/all_ws/install/setup.bash;
 source ~/ryan/ros_ws/install/setup.bash
+
+# On my Laptop
+source /opt/ros/humble/setup.bash;
+source ~/metavision_viewer/install/setup.bash;
+source ~/zed_ros/install/setup.bash
 ```
 
 ### Event data
