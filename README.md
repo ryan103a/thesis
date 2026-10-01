@@ -28,7 +28,7 @@ source ~/ryan/ros_ws/install/setup.bash
 
 # On my Laptop
 source /opt/ros/humble/setup.bash;
-source ~/metavision_viewer/install/setup.bash;
+source ~/metavision_driver_ws/install/setup.bash;
 source ~/zed_ros/install/setup.bash
 ```
 
