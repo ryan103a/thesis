@@ -18,6 +18,12 @@ Undergraduate thesis work. Generating a stereo event camera dataset for underwat
 
 ## BlueROV2
 
+```
+source /opt/ros/humble/setup.bash \ 
+source ~/zimeng/pile_detection/all_ws/install/setup.bash \
+source ~/ryan/ros_ws/install/setup.bash
+```
+
 ### Event data
 
 All files are stored under `/bluerov/ryan/`. The setup is the same as below to record only event data.
