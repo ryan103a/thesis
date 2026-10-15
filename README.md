@@ -40,8 +40,27 @@ All files are stored under `/bluerov/ryan/`. The setup is the same as below to r
 
 The pile detection setup is located in the `bluerov/zimeng/` folder. This also includes the ZED stuff in `all_ws/`, make sure to run it from here too otherwise it doesn't work.
 
+### Recording
 
-## Event cameras with ROS2
+**Need to get the files off the rov and write up how I used it**
+
+The basic steps include:
+
+* I created a copy of the existing meta launch files and added the event cameras to it
+* Start the launch file which boots up all of the sensors etc.
+* Run the recording script to record the ros bags
+
+```
+# The launch file
+ ros2 launch meta ...
+```
+
+```
+# The recording script
+```
+
+
+## Event cameras with ROS2 (Not on the ROV)
 
 Open source [metavision driver](https://github.com/ros-event-camera/metavision_driver). Currently installed on personal computer at `metavisoin_driver_ws`, more in depth information on their github page. This is more of a quickstart for me. Make sure to source ROS2 and the driver folder itself with: 
 
@@ -119,7 +138,7 @@ ros2 run event_camera_tools bag_to_raw \
 
 There are more steps to then convert the raw files for calibration.
 
-## Calibration 
+## Calibration (Once in db3 format, off the ROV)
 
 For this project I settled on using [E2CALIB](https://github.com/uzh-rpg/e2calib) to convert the event streams into grayscale images which could then be used to perform standard camera calibration using OpenCV.
 
