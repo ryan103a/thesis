@@ -1,6 +1,10 @@
 # Thesis
 Undergraduate thesis work. Generating a stereo event camera dataset for underwater applications.
 
+Using 2 x Metavision Prophesee EVK4HD cameras in stereo configuration with a hardware synchronisation cable.
+
+Data recording was done using the BlueROV2 as the vehicle. The computer used to record the data was an NVIDIA Jetson Orin.
+
 ## Useful commands
 
 | Command      | Description |
