@@ -1,0 +1,13 @@
+# Bag folder names
+[bags]
+lab-calib-2-28-09-26
+# pool-test-1-1-10-26
+# pool-test-2-1-10-26
+# pool-test-3-1-10-26
+
+# Image folders inside each bag
+[folders]
+# sync-primary
+# sync-secondary
+primary
+secondary
