@@ -256,6 +256,5 @@ HAL examples: `/usr/local/share/metavision/hal`.
 IPv4 Address: 192.168.2.1 
 
 SSH Connect to bluerov@ubuntu.local
-Password: bluerov
 
 BlueOS Website thing: blueos.local
