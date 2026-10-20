@@ -192,8 +192,19 @@ python3 utils/checkerboard_detection.py \
 
 I have also create a batch script `batch_checkerboard_detections.sh` in `/utils` to more quickly run this script on a larger group of files.
 
-#### Intrinsics Calibration
+#### Intrinsics / Extrinsics Calibration
 
+This script again was made with the use of gen AI. It takes in the reconstruction images from the 2 stereo cameras and attempts to calibrate the intrinsics and extrinsics of the cameras. For further details on the script, please read the file. Here is an example of how it is used.
+
+```
+python3 ~/unsw/thesis/utils/stereo_calib_from_reconstruction.py \
+--master_dir primary/ \
+--slave_dir secondary/ \
+--cols 12 \
+--rows 8 \
+--square 30 \
+--out calibration.json
+```
 
 
 ## Metavision event camera recording
