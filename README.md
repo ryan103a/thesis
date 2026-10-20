@@ -194,7 +194,7 @@ I have also create a batch script `batch_checkerboard_detections.sh` in `/utils`
 
 #### Intrinsics / Extrinsics Calibration
 
-This script again was made with the use of gen AI. It takes in the reconstruction images from the 2 stereo cameras and attempts to calibrate the intrinsics and extrinsics of the cameras. For further details on the script, please read the file. Here is an example of how it is used.
+This script again was made with the use of gen AI. It takes in the reconstruction images from the 2 stereo cameras and attempts to calibrate the intrinsics and extrinsics of the cameras. The output calibration `.json` file is specifically in the format required by the `metavision_stereo_matching` program provided by Prophesee. For further details on the script, please read the file. Here is an example of how it is used.
 
 ```
 python3 ~/unsw/thesis/utils/stereo_calib_from_reconstruction.py \
