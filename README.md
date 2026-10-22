@@ -50,22 +50,21 @@ The pile detection setup is located in the `bluerov/zimeng/` folder. This also i
 
 ### Recording
 
-**Need to get the files off the rov and write up how I used it**
-
-The basic steps include:
-
-* I created a copy of the existing meta launch files and added the event cameras to it
-* Start the launch file which boots up all of the sensors etc.
-* Run the recording script to record the ros bags
+The first step is to source everything. The ros recording and launch scripts won't work if they do not know what to reference. The first step to recording is to get all of the sensors up and running. The `meta.launch.py` launch script does this. With the way that the ZED2 camera was set up on the BlueROV2, this needs to be run from the `/zimeng/piles_detection/all_ws` folder.
 
 ```
-# The launch file
- ros2 launch meta ...
+# The launch file (run from /home/bluerov/zimeng/piles_detection/all_ws)
+ros2 launch stereo_event_bluerov_bringup meta.launch.py
 ```
 
+To then record data use the following script. The script sets up which topics to record in the rosbag and aims to handle terminating the recording too, as other methods may cut the recording short or corrupt the recording.
+
 ```
-# The recording script
+# The recording script (/home/blurov/ryan/utils)
+record_rosbag.sh <bag_name>
 ```
+
+The recorded files are sent to `/home/blurov/ryan/datasets/` by default.
 
 
 ## Event cameras with ROS2 (Not on the ROV)
@@ -73,8 +72,7 @@ The basic steps include:
 Open source [metavision driver](https://github.com/ros-event-camera/metavision_driver). Currently installed on personal computer at `metavisoin_driver_ws`, more in depth information on their github page. This is more of a quickstart for me. Make sure to source ROS2 and the driver folder itself with: 
 
 ```
-cd metavision_driver_ws
-source install/setup.bash
+source metavision_driver_ws/install/setup.bash
 ```
 
 ### Recording
